@@ -4,7 +4,15 @@ export class CommonLocators {
     
     constructor(page: Page) {
         this.page = page;
-        this.locatorInitialization();
+        this.locatorsInitialization();
+    }
+    setPage(page: Page) {
+        this.page = page;
+        this.locatorsInitialization();
+    }
+
+    getPage(): Page {
+        return this.page;
     }
 
     btnSave!: Locator;
@@ -17,8 +25,7 @@ export class CommonLocators {
     btnSubmit!: Locator;
 
     
-    
-    locatorInitialization() {
+    locatorsInitialization() {
         this.btnSave = this.page.locator('button:has-text("Save")');
         this.btnCancel = this.page.locator('button:has-text("Cancel")');
         this.btnDelete = this.page.locator('button:has-text("Delete")');
