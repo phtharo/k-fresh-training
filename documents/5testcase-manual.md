@@ -4,244 +4,74 @@
 
 # TC_CART_001
 
-## 1. 📌 Core Information
-- **Test Case ID:** TC_CART_001  
-- **Title:** Verify user can add product to cart successfully  
-- **Module/Feature:** Add to Cart  
-- **Requirement ID:** CART-001  
-- **Priority:** High  
-- **Severity:** Major  
-- **Test Type:** Functional  
-- **Automation:** Yes  
+| **Field**           | **Details**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Test Case ID**    | TC_CART_001                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Test Title**      | Add product to cart successfully                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Module**          | Add to Cart                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Priority**        | High                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Pre-condition**   | User has accessed the website successfully. Product is available. User is on homepage.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Test Steps**      | 1. Open browser <br> 2. Navigate to website URL <br> 3. Verify homepage is displayed <br> 4. Search for a product or select a product from homepage <br> 5. Click on product name <br> 6. Verify product detail page is displayed <br> 7. Verify product information (name, price, availability) <br> 8. Locate quantity input field <br> 9. Verify default quantity = 1 <br> 10. Click **Add to Cart** button <br> 11. Wait for system response <br> 12. Verify success message is displayed <br> 13. Verify cart icon is updated <br> 14. Click cart icon <br> 15. Verify product is displayed in cart |
+| **Test Data**       | Product: Any available product <br> Quantity: 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Expected Result** | Product is added successfully, success message is displayed, cart quantity increases, and product is visible in cart                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-## 2. 🧩 Preconditions
-- User truy cập website thành công  
-- Product có sẵn (In Stock)  
-- User đang ở trang product detail  
-
-## 3. 🔄 Test Steps & Expected Results
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Navigate to product detail page | Product detail page is displayed |
-| 2 | Click “Add to Cart” button | Success message is displayed |
-| 3 | Check cart icon | Cart quantity is increased by 1 |
-| 4 | Open mini cart | Product is displayed in cart |
-
-## 4. 📊 Test Data
-
-| Field | Value |
-|------|-------|
-| Product | Any available product |
-| Quantity | 1 |
-
-## 5. ✅ Postconditions
-- Product được thêm vào cart  
-
-## 6. 🐞 Execution Result
-
-| Field | Description |
-|------|------------|
-| Status | |
-| Actual Result | |
-| Defect ID | |
-| Executed By | |
-| Execution Date | |
-
-## 7. 📝 Notes / Attachments
-- Screenshot nếu fail  
 
 ---
 
 # TC_CART_002
 
-## 1. 📌 Core Information
-- **Test Case ID:** TC_CART_002  
-- **Title:** Verify user can add product with multiple quantity successfully  
-- **Module/Feature:** Add to Cart  
-- **Requirement ID:** CART-002  
-- **Priority:** High  
-- **Severity:** Major  
-- **Test Type:** Functional  
-- **Automation:** Yes  
-
-## 2. 🧩 Preconditions
-- Product available  
-- User ở trang product detail  
-
-## 3. 🔄 Test Steps & Expected Results
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Navigate to product detail page | Page is displayed |
-| 2 | Enter quantity = 3 | Quantity field accepts value |
-| 3 | Click “Add to Cart” | Success message displayed |
-| 4 | Open cart | Product quantity = 3 |
-
-## 4. 📊 Test Data
-
-| Field | Value |
-|------|-------|
-| Product | Any available product |
-| Quantity | 3 |
-
-## 5. ✅ Postconditions
-- Cart chứa product với quantity = 3  
-
-## 6. 🐞 Execution Result
-
-| Field | Description |
-|------|------------|
-| Status | |
-| Actual Result | |
-| Defect ID | |
-| Executed By | |
-| Execution Date | |
-
-## 7. 📝 Notes / Attachments
-- Screenshot nếu fail  
-
+| **Field**           | **Details**                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Test Case ID**    | TC_CART_002                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Test Title**      | Add product with multiple quantity successfully                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Module**          | Add to Cart                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Priority**        | High                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Pre-condition**   | Product available, user on homepage                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Test Steps**      | 1. Open browser <br> 2. Navigate to website <br> 3. Verify homepage displayed <br> 4. Select a product <br> 5. Click product name <br> 6. Verify product detail page <br> 7. Locate quantity input <br> 8. Clear existing value <br> 9. Enter quantity = 3 <br> 10. Verify input accepted <br> 11. Click **Add to Cart** <br> 12. Wait for system response <br> 13. Verify success message <br> 14. Open cart page <br> 15. Verify product quantity = 3 |
+| **Test Data**       | Product: Any <br> Quantity: 3                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Expected Result** | Product added with correct quantity and cart reflects correct value                                                                                                                                                                                                                                                                                                                                                                                     |
 ---
 
 # TC_CART_003
 
-## 1. 📌 Core Information
-- **Test Case ID:** TC_CART_003  
-- **Title:** Verify system updates quantity when adding same product multiple times  
-- **Module/Feature:** Add to Cart  
-- **Requirement ID:** CART-003  
-- **Priority:** High  
-- **Severity:** Major  
-- **Test Type:** Functional  
-- **Automation:** Yes  
-
-## 2. 🧩 Preconditions
-- Product đã có trong cart (quantity = 1)  
-
-## 3. 🔄 Test Steps & Expected Results
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Click “Add to Cart” again | Success message displayed |
-| 2 | Open cart | Quantity is increased (e.g., 2) |
-
-## 4. 📊 Test Data
-
-| Field | Value |
-|------|-------|
-| Product | Same product |
-| Initial Quantity | 1 |
-
-## 5. ✅ Postconditions
-- Quantity được cộng dồn  
-
-## 6. 🐞 Execution Result
-
-| Field | Description |
-|------|------------|
-| Status | |
-| Actual Result | |
-| Defect ID | |
-| Executed By | |
-| Execution Date | |
-
-## 7. 📝 Notes / Attachments
-- Verify không tạo duplicate item  
+| **Field**           | **Details**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Test Case ID**    | TC_CART_003                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Test Title**      | Update quantity when adding same product multiple times                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Module**          | Add to Cart                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Priority**        | High                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Pre-condition**   | Product already added to cart (quantity = 1)                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Test Steps**      | 1. Open browser <br> 2. Navigate to website <br> 3. Go to product detail page <br> 4. Verify product displayed <br> 5. Verify product already in cart (qty = 1) <br> 6. Click **Add to Cart** again <br> 7. Wait for response <br> 8. Verify success message <br> 9. Click cart icon <br> 10. Open cart page <br> 11. Locate product in cart <br> 12. Verify quantity increased <br> 13. Verify no duplicate item created <br> 14. Verify total price updated <br> 15. Verify cart state is correct |
+| **Test Data**       | Product: Same product                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Expected Result** | Quantity is updated correctly, no duplicate product, total price recalculated                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 ---
 
 # TC_CART_004
 
-## 1. 📌 Core Information
-- **Test Case ID:** TC_CART_004  
-- **Title:** Verify user can add available product to cart successfully  
-- **Module/Feature:** Add to Cart  
-- **Requirement ID:** CART-004  
-- **Priority:** High  
-- **Severity:** Major  
-- **Test Type:** Functional  
-- **Automation:** Yes  
-
-## 2. 🧩 Preconditions
-- Product còn hàng  
-- User đang ở product list hoặc product detail  
-
-## 3. 🔄 Test Steps & Expected Results
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Click “Add to Cart” từ product list | Success message displayed |
-| 2 | Check cart icon | Cart updated correctly |
-
-## 4. 📊 Test Data
-
-| Field | Value |
-|------|-------|
-| Product | Available product |
-
-## 5. ✅ Postconditions
-- Product added vào cart  
-
-## 6. 🐞 Execution Result
-
-| Field | Description |
-|------|------------|
-| Status | |
-| Actual Result | |
-| Defect ID | |
-| Executed By | |
-| Execution Date | |
-
-## 7. 📝 Notes / Attachments
-- Verify từ nhiều entry point  
+| **Field**           | **Details**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Test Case ID**    | TC_CART_004                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Test Title**      | Add product to cart from product listing page                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Module**          | Add to Cart                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Priority**        | High                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Pre-condition**   | Product available, user on homepage                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Test Steps**      | 1. Open browser <br> 2. Navigate to website <br> 3. Verify homepage displayed <br> 4. Navigate to product listing page <br> 5. Verify list of products displayed <br> 6. Locate a product <br> 7. Verify product info (name, price) <br> 8. Locate **Add to Cart** button <br> 9. Click **Add to Cart** <br> 10. Wait for system response <br> 11. Verify success message <br> 12. Verify cart icon updated <br> 13. Click cart icon <br> 14. Open mini cart <br> 15. Verify product added successfully |
+| **Test Data**       | Product: Available product                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Expected Result** | Product is added successfully from listing page and cart is updated                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ---
 
 # TC_CART_005
 
-## 1. 📌 Core Information
-- **Test Case ID:** TC_CART_005  
-- **Title:** Verify cart displays correct product and quantity after adding  
-- **Module/Feature:** Add to Cart  
-- **Requirement ID:** CART-005  
-- **Priority:** High  
-- **Severity:** Major  
-- **Test Type:** Functional  
-- **Automation:** Yes  
-
-## 2. 🧩 Preconditions
-- Product đã được thêm vào cart  
-
-## 3. 🔄 Test Steps & Expected Results
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Open cart page | Cart page is displayed |
-| 2 | Verify product name | Correct product name displayed |
-| 3 | Verify quantity | Quantity is correct |
-| 4 | Verify total price | Total price calculated correctly |
-
-## 4. 📊 Test Data
-
-| Field | Value |
-|------|-------|
-| Product | Any |
-| Quantity | 1+ |
-
-## 5. ✅ Postconditions
-- Cart hiển thị đúng dữ liệu  
-
-## 6. 🐞 Execution Result
-
-| Field | Description |
-|------|------------|
-| Status | |
-| Actual Result | |
-| Defect ID | |
-| Executed By | |
-| Execution Date | |
-
-## 7. 📝 Notes / Attachments
-- Compare UI vs expected price  
-
+| **Field**           | **Details**                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Test Case ID**    | TC_CART_005                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Test Title**      | Verify cart displays correct product details after adding                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Module**          | Add to Cart                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Priority**        | High                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Pre-condition**   | Product already added to cart                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Test Steps**      | 1. Open browser <br> 2. Navigate to website <br> 3. Add product to cart <br> 4. Verify success message <br> 5. Click cart icon <br> 6. Open cart page <br> 7. Verify cart page displayed <br> 8. Locate product in cart <br> 9. Verify product name <br> 10. Verify product price <br> 11. Verify quantity value <br> 12. Verify subtotal calculation <br> 13. Verify total price <br> 14. Refresh page <br> 15. Verify cart data persists correctly |
+| **Test Data**       | Product: Any <br> Quantity: 1+                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Expected Result** | Cart displays correct product details, quantity, and pricing consistently                                                                                                                                                                                                                                                                                                                                                                            |
 ---
