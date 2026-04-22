@@ -1,5 +1,5 @@
 import test, { expect, Page } from '@playwright/test';
-import { User } from '../model/user';
+import { User } from '../models/user';
 import { Constants } from '../utilities/constants';
 import { LoginLocators } from '../locators/login-locators';
 import { CommonPage } from './commom-page';
@@ -33,8 +33,7 @@ export class LoginPage extends LoginLocators {
    */
   async expectSuccessfulLogin() {
     await test.step('Verify successful login', async () => {
-      await expect(this.page).toHaveURL(Constants.SECURE_URL);
-      await expect(this.flashMessage).toContainText(Constants.SUCCESS_MESSAGE);
+      await expect(this.page).toHaveURL(Constants.USER_ACCOUNT_URL);
       });
   }
 }

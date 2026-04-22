@@ -1,18 +1,18 @@
 {
     "qa": {
-        "username": "tomsmith",
-        "password": "SuperSecretPassword!"
+        "username": "phumy15051970@gmail.com",
+        "password": "123456"
     },
     "prod": {
-        "username": "prod_user",
-        "password": "ProdSecretPassword!"
+        "username": "phumy15051970@gmail.com",
+        "password": "123456"
     },
     "staging": {
-        "username": "staging_user",
-        "password": "StagingSecretPassword!"
+       "username": "phumy15051970@gmail.com",
+        "password": "123456"
     },
     "dev": {
-        "username": "dev_user",
-        "password": "DevSecretPassword!"
+       "username": "phumy15051970@gmail.com",
+        "password": "123456"
     }
 }

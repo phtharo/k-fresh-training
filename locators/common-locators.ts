@@ -23,6 +23,8 @@ export class CommonLocators {
     btnView!: Locator;
     btnSearch!: Locator;
     btnSubmit!: Locator;
+    btnHome!: Locator;
+    btnLogin!: Locator
 
     
     locatorsInitialization() {
@@ -34,5 +36,7 @@ export class CommonLocators {
         this.btnView = this.page.locator('button:has-text("View")');
         this.btnSearch = this.page.locator('button:has-text("Search")'); 
         this.btnSubmit = this.page.locator('button:has-text("Submit")');   
+        this.btnHome = this.page.locator('a:has-text("Home")');
+        this.btnLogin = this.page.locator('a:has-text("Login")');
     }
 }
